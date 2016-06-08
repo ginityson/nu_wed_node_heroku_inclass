@@ -20,7 +20,7 @@ var server = app.listen(process.env.PORT || 3000, function(){
 app.get('/', function(req, res){
   console.log('hello from base url get');
   res.writeHead(200);
-  res.write('we are in base url');
+  res.write('We made it to Heroku!!!!');
   res.end();
 });
 

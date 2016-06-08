@@ -12,8 +12,8 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded( {extended:false});
 
 //spin up the server
-var server = app.listen(8080, 'localhost', function(){
-  console.log('server listening on port 8080');
+var server = app.listen(process.env.PORT || 3000, function(){
+  console.log('server listening on port 3000');
 });
 
 //base url
